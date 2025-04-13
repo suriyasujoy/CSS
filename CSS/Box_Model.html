@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }   /*Reset css margin and padding*/
+
+
+        .BackGround{
+            background-color: aqua;
+            width: 500px;
+            height: 300px;            
+        }
+        .box1{
+            width: 250px;
+            height: 75px;
+            box-sizing: border-box; /* This will include padding and 
+            border in the width and height of the box */
+            padding: 5px;   /*  it create space inside the div from left right top and bottum*/
+            border: 5px solid black;    /*  it create border around the div*/
+            margin: 5px;   /*  it create space outside the div from left right top and bottum*/
+        }
+        .box2{
+            width: 300px;
+            height: 150px;
+            margin: 10px 0px 0px 10px;    /*  it create space outside the div from top right bottum and left*/
+            padding: 10px 0px 0px 10px;   /*  it create space inside the div from left right top and bottum*/
+        }
+        .boxes{
+            width: 100px;
+            height: 50px;
+            border: 2px solid black;    /*  it create border around the div*/
+        }
+/* Separate boxes using color */
+        .box{
+            background-color: red;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="BackGround">
+        <div class="box box1">I am Box 1</div>
+        <br><br>
+        <div class="box box2">
+            <div class="boxes">I am boxes</div>
+        </div>
+    </div>
+</body>
+</html>

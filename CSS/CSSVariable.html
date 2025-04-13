@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color: red;
+            --defmar: 20px;
+            --boxcolor: rgb(254, 131, 0);
+            --boxborder: 2px solid rgb(252, 4, 128);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            margin: var(--defmar);
+            border: 2px solid var(--color);
+            width: 400px;
+        }
+        .box{
+            border: var(--boxborder);
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box box1">I am box 1</div>
+        <div class="box box2">I am box 2</div>
+        <div class="box box3">I am box 3</div>
+    </div>
+</body>
+</html>

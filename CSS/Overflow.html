@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 100px;
+            border: 2px solid black;
+            /* overflow: auto;
+            overflow-x: hidden;
+            overflow-y: scroll; */
+            overflow: scroll scroll;    /* overflow: x y;  is used to set the overflow of the div in x and y direction */
+            overflow-wrap: break-word;  /* is used to break the word in the div when it is overflow */  
+            hyphens: auto;  /* is used to set the hyphens('-') in the text for next line word automatically */
+            text-align: justify;    /* is used to set the text in justify format in the div */
+            padding: 2px;
+            /* overflow: auto hidden; auto means when there are many words then browser set 
+            a scrollber otherwise it looking simple and hidden use hide overflow text */
+            /* white-space: nowrap;  keep all the text on one line, even if it overflows */
+            /* text-overflow: ellipsis;  When there's too much text to fit in one line, it will cut
+            off the overflow and show … (ellipsis) at the end. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a good boy and I love to write Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta iure amet
+        unde voluptas nihil vero, maxime esse quis quos natus rem, earum aspernatur quasi aut ea commodi nostrum
+        voluptate! Sint rerum nostrum perferendis sapiente explicabo perspiciatis, ut magni? Aspernatur, provident
+        dolorum unde corporis doloribus rem!
+    </div>
+</body>
+
+</html>

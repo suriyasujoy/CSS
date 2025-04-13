@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .parent{
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid blue;
+        }
+        .box{
+            border: 2px solid black;
+            height: 25px;
+            width: 100px;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: green;
+            position: relative;
+            top:10px;
+            left: 20px;
+        }
+        .box3{
+            background-color: blue;
+            position: absolute;  /* set position absolute then use top 
+            property */
+            top:0px;    /* set top position from its parent absolute */
+            /* but here parent is not set position absolute */
+            
+        }
+        .box4{
+            background-color: yellow;
+            position: fixed;    /* set position fixed, though we scroll the page
+            but this box stil its position  */
+        }
+        .base{
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid blue;
+            position: absolute;
+            width: 200px;
+            height: 30px;
+        }
+        .derived{
+            border: 2px solid black;
+            height: 25px;
+            width: 100px;
+        }
+        .derived1{
+            background-color: aqua;
+            position: absolute;
+            top: 0px;
+            left: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    </div>
+    <br>
+    <div class="base">
+        <div class="derived derived1"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 400px;
+            width: 500px;
+        }
+        img{
+            border: 2px solid red;
+            height: 300px;
+            width:400px;
+            /* to fix the iamge above height and width we use object-fit */
+            object-fit: cover; /* cover the ratio of the image and cut the extra part */
+            /* object-fit: contain;    show the whole image */
+            /* object-position: center center; center the image */
+            object-position: top left; /* top left the image */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="BackgroundPicture.png" alt="nature">
+    </div>
+</body>
+</html>

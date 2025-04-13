@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow and outline</title>
+    <style>
+        .box1{
+            border: 2px solid red;  /* is used to set the border of the div border: width property color*/            box-shadow: inset -1px -3px 0px 5px yellow; /* is used to set the shadow of the div box-shadow: inset x y blur spread color*/
+            /* box-shadow: outset -1px -3px 0px 5px yellow; is used to set the shadow of the div box-shadow: inset x y blur spread color */
+        }
+        .box2{
+            outline:2px solid blue; /* is used to set the outline of the div outline: width property color*/
+        }
+        .mytext1{
+            text-shadow: 16px 15px 11px red; /* is used to set the shadow of the text text-shadow: x y blur color*/
+        }
+        .mytext2{
+            border : 2px solid red;
+            outline: 2PX solid blue;    /* border and outline both have similer difference
+            outline is set outside the border */
+            outline-offset: 5px;
+            height: 50px;
+            width: 200px;
+            display: flex;
+            justify-content: center;  /* Horizontal alignment */
+            align-items: center;      /* Vertical alignment */
+            /* here justify-content and align-items both are worked for display flex
+            if it is not add here then justify-content and align-items not working */
+            border-radius: 20%;/* if we change radius of border then it is also change the radius of outline */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, blanditiis?
+    </div>
+    <br>
+    <div class="box2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, blanditiis?
+    </div>
+    <br>
+    <p class="mytext1">Lorem ipsum dolor sit amet.</p>
+    <br>
+    <div class="mytext2">Lorem ipsum dolor sit amet.</div>
+</body>
+</html>

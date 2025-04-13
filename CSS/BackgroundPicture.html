@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* padding: 10px 0px 0px 10px; */   /* it is not right way to use padding for main class */
+            margin: 0px;
+            padding: 0px;
+        }
+        .main1{
+            width: 350px;
+            height: 200px;
+            border:2px solid black;
+            margin: 20px;
+            background-image: url("BackgroundPicture.png");
+            /* background-repeat: no-repeat; */ /* it is not right way to use background-repeat for main class */
+            /* background-repeat: repeat-x; */ /* it is not right way to use background-repeat for main class */
+            /* background-repeat: repeat-y; */ /* it is not right way to use background-repeat for main class */
+            background-repeat: repeat;
+        }
+        .main2{
+            width: 350px;
+            height: 200px;
+            border:2px solid black;
+            margin: 20px;
+            background-image: url("BackgroundPicture.png");
+            background-size: cover;   /* fits & no empty space
+            /* background-size: contain; */ /* fits and image is fully visible */
+            /* background-size: auto; */ /* image is not resized */
+        }
+        .main3{
+            width: 350px;
+            height: 200px;
+            border:2px solid black;
+            margin: 20px;
+            background: red url("BackgroundPicture.png") repeat;
+            /* background: red url("BackgroundPicture.png") repeat fixed left top;*/    /* give property */
+            background-position:right bottom; /* set starting position of image */;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main1">
+       
+    </div>
+    <br><br>
+    <div class="main2">
+       
+    </div>
+    <br><br>
+    <div class="main3">
+
+    </div>
+</body>
+</html>

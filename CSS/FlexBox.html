@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: flex;
+            /* margin: 5px; */
+            width: 20vw;
+            height: 25vh;
+            flex-wrap: wrap;
+            /* align items use for single row */
+            /* align-items: flex-end;  show items at the end of the container */
+            /* align-items: center;  show items at the center of the container */
+            /* align-content use for multiple rows */
+            /* align-content: flex-start;  show items at the start of the container */
+            align-content: flex-end;  /* show items at the end of the container */
+            /* flex-wrap is used when we have more items than the container width
+            and wish to display them in multiple rows */
+            /* flex-wrap: wrap-reverse;     */
+            /* gap: 5px; */
+            /* row-gap: 5px;
+            column-gap: 5px; */
+            /* gap: 5px 10px;  row-gap column-gap */
+            /* flex-direction: column; show column column wise */
+            /* flex-direction: column-reverse; show column column wise in reverse order */
+            /* flex-flow: row wrap;    flex-direction: row; flex-wrap: wrap; */
+        }
+        .item {
+            
+            height: 30px;
+            width: 30px;
+            border: 2px solid red;
+            background-color: aqua;
+        }
+        .item1{
+            order: 2;
+        }
+        .item2{
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>   <!-- By default every class have 0 order -->
+        <div class="item item2">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+</body>
+</html>

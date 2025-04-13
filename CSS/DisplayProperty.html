@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispaly Property</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box1{
+            border: 2px solid black;
+            display: inline; /* it is used to make div as inline element */
+            padding: 20px;  /* when use inline property then padding and margin will not work from top */
+            margin: 10px;
+        }
+        .box2{
+            border: 2px solid black;
+            display: inline-block;  /* when inline-block is used then padding and margin will work from all sides*/
+            padding: 20px;
+            margin: 10px;
+        }
+        span{
+            border:2px solid black;
+        }
+        .box3{
+            border: 2px solid black;
+            display: block; /* it is used to make div as block element */
+            padding: 20px;  /* when use block property then padding and margin will work from all sides*/
+            margin: 10px;
+        }
+        .e{
+            display: none;  /* it is used to hide the element and there are no space*/
+        }
+        .c{
+            visibility: hidden; /* it is used to hide the element but there are space*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">I am box a</div>
+    <div class="box1">I am box b</div>
+    <br><br>
+    <!-- we use division tag as inline element by using display property -->
+    <div class="box2 c">I am box c</div>
+    <div class="box2 d">I am box d</div>
+    <br><br>
+    <!-- span are inline element -->
+    <span>I am span 1</span>
+    <span>I am span 2</span>
+    <br><br>
+    <div class="box3 e">I am box e</div>
+    <div class="box3">I am box d</div>
+</body>
+</html>

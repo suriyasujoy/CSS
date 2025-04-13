@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <!-- media query used set css for different devise -->
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            padding: 2px;
+            border:2px solid black;
+            width: 75vw;
+            height: 75vh;
+            margin: 20px;
+            display: flex;
+            gap: 3px;
+            background-color: rgb(128, 240, 240);
+        }
+        .box{
+            border: 2px solid red;
+            text-align: center;
+            width: 30%;
+            height: 30%;
+            background-color: crimson;
+        }
+        @media only screen and (max-width:800px){ /* this css will be applied when screen size is less than 800px */
+            .main{
+                flex-direction: column;
+                background-color: chartreuse;
+            }
+            .box{
+                background-color: darkred;
+            }
+        }
+     </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">I am box 1</div>
+        <div class="box">I am box 2</div>
+        <div class="box">I am box 3</div>
+    </div>
+</body>
+</html>
